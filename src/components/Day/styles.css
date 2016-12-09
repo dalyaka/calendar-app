@@ -1,0 +1,24 @@
+.container {
+  width: 150px;
+  height: 120px;
+
+  text-align: right;
+
+  border: 1px solid #e5e5e5;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.disabled {
+  background: #f7f7f7;
+
+  cursor: default;
+
+  color: rgba(0, 0, 0, 0.29);
+}

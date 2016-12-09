@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 65px;
+  width: 100%;
+
+  background: #f8f9fb;
+
+  padding: 0 15px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #e5e5e5;
+}
+
+.title {
+  font-size: 28px;
+  color: #717f9d;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 15px;
+
+  border: 1px solid #717f9d;
+
+  text-align: center;
+  line-height: 30px;
+
+  color: #717f9d;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+
+.daysNames {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  text-align: center;
+
+  color: #8991a2;
+
+  font-size: 12px;
+}
+
+.daysNames div {
+  width: 150px;
+
+  background: #d8dbe1;
+
+  border: 1px solid #bec3cf;
+}

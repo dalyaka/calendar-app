@@ -18,6 +18,7 @@ module.exports = function renderTemplate(htmlWebpackPluginData) {
         <!DOCTYPE html>
         <html>
         <head>
+          <script src="https://use.fontawesome.com/4390558762.js"></script>
           <meta charset="UTF-8">
           ${process.env.NODE_ENV === 'production' ? files.css.map(renderStyleLink).join('\n') : ''}
           <title>Ida's calendar app</title>

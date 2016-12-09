@@ -34,9 +34,18 @@ function createJsLoader() {
       babelrc: false,
       presets: [
         'es2015',
-        'react'
+        'react',
+        'stage-0'
       ]
     }
+  }
+}
+
+function createCssLoader() {
+  return {
+    test: /\.css$/,
+    exclude: /node_modules/,
+    loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader',
   }
 }
 
@@ -54,6 +63,7 @@ module.exports = function createWebpackConfig({ env = 'development' } = {}) {
     module: {
       rules: [
         createJsLoader(),
+        createCssLoader(),
       ],
     },
     plugins: [
